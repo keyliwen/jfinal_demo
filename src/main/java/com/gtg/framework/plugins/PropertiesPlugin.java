@@ -1,4 +1,4 @@
-package com.gtg.plugin;
+package com.gtg.framework.plugins;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,7 +6,7 @@ import java.util.Properties;
 
 import org.apache.log4j.Logger;
 
-import com.gtg.common.DictKeys;
+import com.gtg.framework.common.DictKeys;
 import com.jfinal.plugin.IPlugin;
 /**
  * 读取properties配置文件数据放入缓存

@@ -1,11 +1,12 @@
-package com.gtg.config;
+package com.gtg.framework.config;
 
 import org.apache.log4j.Logger;
 
-import com.gtg.common.DictKeys;
-import com.gtg.controller.HelloController;
-import com.gtg.model.Test;
-import com.gtg.plugin.PropertiesPlugin;
+import com.gtg.app.controller.HelloController;
+import com.gtg.app.model.Test;
+import com.gtg.framework.common.DictKeys;
+import com.gtg.framework.plugins.PropertiesPlugin;
+import com.gtg.framework.plugins.TablePlugin;
 import com.jfinal.config.Constants;
 import com.jfinal.config.Handlers;
 import com.jfinal.config.Interceptors;
@@ -59,7 +60,7 @@ public class JfinalConfig extends JFinalConfig{
 		log.info("configPluginÌí¼ÓDruid");
 		me.add(druidPlugin);
 		log.info("configPlugin×¢²á±í");
-		arp.addMapping("test", Test.class);
+		new TablePlugin(arp).start();
 		log.info("configPluginÌí¼ÓActiveRecord");
 		me.add(arp);
 	}

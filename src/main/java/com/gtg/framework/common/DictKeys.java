@@ -1,4 +1,4 @@
-package com.gtg.common;
+package com.gtg.framework.common;
 /**
  * 常用数据字典
  * @author keyliwen

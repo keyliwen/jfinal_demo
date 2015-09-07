@@ -1,9 +1,9 @@
-package com.gtg.controller;
+package com.gtg.app.controller;
 
 
 import java.util.List;
 
-import com.gtg.model.Test;
+import com.gtg.app.model.Test;
 import com.jfinal.core.Controller;
 
 public class HelloController extends Controller{
